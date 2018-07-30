@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Magnus Jahnen}} & Email : \href{mailto:magnus@jahnen.me}{magnus@jahnen.me}\\
+  \href{https://jahnen.me/}{https://www.jahnen.me} & Mobile : +49 15170034267 \\
+\end{tabular*}
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Python, Java, SQL, C++, C, Kotlin, Swift, Objective-C(++) }
+     \hfill
+     \textbf{Technologies}{: PyTorch, Tensorflow, matplotlib, flask, RoR, Qt, pandas, Jupyter}
+     \hfill
+     \textbf{Tools}{: Docker, Jenkins, Jira, bamboo}
+   }
+ \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stanford University}{Stanford, CA}
+      {Visiting Researcher Human Computer Interaction Lab}{Sep. 2016 -- March 2017}
+    \resumeSubheading
+      {Center for Digital Technology and Management}{Munich, Germany}
+      {Honours Degree Techonology \& Management}{Aug. 2015 -- June 2018}
+    \resumeSubheading
+      {Technical University of Munich}{Munich, Germany}
+      {Master of Science in Computer Science;  current GPA: 1.3}{2014 -- 2018}
+      %{Bachelor of Science in Computer Science;  GPA: 2.0}{2011 -- 2014}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Mercedes Benz Research \& Development North America, Inc.}{Sunnyvale, CA}
+      {Intern, Vehicle Intelligence}{July 2017 - March 2018}
+      \resumeItemListStart
+        \resumeItem{Masters thesis}
+          {Deep Inverse Reinforcement Learning for trajectory for trajectory planning in fully-autonomous vehicles}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Bome Software GmbH}{Munich, Germany}
+      {Freelancer}{Current, from Nov. 2012}
+      \resumeItemListStart
+        \resumeItem{Application development}
+          {Development of applications for PC/MAC/smartphones in the music sector, mainly regarding a software called MIDI Translator.}
+        \resumeItem{Embedded development} 
+          {Development of a web based configuration utility for the BomeBox, an OpenWrt based embedded device featuring MIDI Translator.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {eGym GmbH}{Munich, Germany}
+      {Business Analyst}{April 2016 -- Aug 2016}
+      \resumeItemListStart
+        \resumeItem{Data analysis}
+          {Data analysis and visualization using QlikView from different sources like (MySQL) databases, spreadsheets or CRM systems.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {eleza e.V.}{Munich, Germany}
+      {Co-founder}{Nov. 2015 -- Nov. 2017}
+      \resumeItemListStart
+        \resumeItem{Backend development}
+          {Development of a platform to share solutions and best practices using Python and Flask for the backend and AngularJS with Foundation (CSS) for the frontend.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Canoco UG}{Munich, Germany}
+      {Lead iOS Engineer}{Mar. 2015 -- Mar. 2017}
+      \resumeItemListStart
+        \resumeItem{iOS app}
+          {Development of an iOS and Android application for Deutsche Bahn. The application allows finding other passengers and sharing a ticket (Bayern-Ticket) with them online.}
+    \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {T-Systems International GmbH}{Munich, Germany}
+    %   {Application Developer}{April--August 2015}
+    %   \resumeItemListStart
+    %     \resumeItem{Notifications}
+    %       {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
+    % \resumeItemListEnd
+
+    \resumeSubheading
+      {CicloSport K.W. Hochschorner Gmb}{Munich, Germany}
+      {Application Developer}{April 2013 - Oct. 2014}
+      \resumeItemListStart
+        \resumeItem{Application development}
+          {Development of applications for PC/MAC (Qt) to communicate with bicycle computers over USB or over the air (ANT+). Development of a BLE iOS application.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Rohde \& Schwarz SIT GmbH}{Munich, Germany}
+      {Lead Android Developer}{Sep. 2011 - July 2012}
+      \resumeItemListStart
+        \resumeItem{Android app}
+          {Development of an Android application for encrypted VoiP communication over IAX2 or SIP.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Scholarship}{2016}
+      {Rohde Stiftung}{}
+    \resumeSubheading
+      {Most Innovative use of Neura}{2017}
+      {Treehacks \textit{(Stanford Hackathon)}}{}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{QuantSoftware Toolkit}
+%       {Open source python library for financial data analysis and machine learning for finance.}
+%     \resumeSubItem{Github Visualization}
+%       {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%     \resumeSubItem{Recommendation System}
+%       {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%   \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
